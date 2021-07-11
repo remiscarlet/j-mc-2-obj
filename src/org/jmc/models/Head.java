@@ -141,7 +141,7 @@ public class Head extends BlockModel
 					}
 					if (newMat) {
 						Log.debug("Downloading new player head texture: " + mtlName);
-						Materials.addMaterial(mtlName, Color.pink, Color.black, "tex/"+mtlName+".png", null);
+						Materials.writeMaterial(mtlName, Color.pink, Color.black, "tex/"+mtlName+".png", null);
 						exportSkullOwnerTexture(skullOwnerTag, mtlName);
 					}
 				}
